@@ -2,7 +2,6 @@ export interface Student {
   id: number;
   name: string;
   BorrowedBooks: number;
-  limit: boolean;
 }
 
 export const alunos: Map<number, Student> = new Map([
