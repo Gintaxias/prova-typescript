@@ -65,7 +65,7 @@ export const GetBookTitles = (livros: Array<Books>) => {
 
 export const GetTotalBooksByAuthor = (author: string, livros: Array<Books>) => {
   return livros.reduce((count, book) => {
-    if (book.author === author && book.available) {
+    if (book.author === author) {
       return count + 1;
     }
     return count;
